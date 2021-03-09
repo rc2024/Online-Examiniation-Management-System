@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<style>
+/*side navigation*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: #e7e7e7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 130px;
+}
+
+.sidenav p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+#main {
+  transition: margin-left 0s;
+  padding: 10px;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top:10px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.user {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+ float:right;
+}
+
+.user:hover {background-color: #e7e7e7;}
+.user {font-size: 24px;}
+
+.sideuser {
+  border: none;
+  color: #0d0d0d;
+  padding: 8px 8px 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 5px;
+  width: 95%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.sidemail {
+    border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 5px;
+  width: 95%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#userarea{
+    border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 95%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.parallax {
+  /* The image used */
+  background-image:  url("IMG/TitleBackground.jpg");
+
+  /* Full height */
+  height: 130%; 
+
+  /* Create the parallax scrolling effect */
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+ }
+
+ul.l {
+  list-style-position: inside;
+ padding:1S5px 32px 40px 40px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="parallax">
+<header>
+<div id="main">
+<div  class="main">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h2><center>Get in Touch</center></h2>
+<br>
+<p><u><b>Address:</u></b>
+ Vardhaman College of Engineering, <br>
+ Kacharam, Shamshabad,<br>
+ Hyderabad,<br>
+ Telangana</p>
+<p><u><b>Email:</u></b> testyou@gmail.com<br>
+  <u><b>Phone:</u></b>  8919043807</p>
+  <form action="index.jsp">
+  <input type="text" class="sideuser" placeholder="Your Name" id="name" />
+  <input type="text" class="sidemail" placeholder="Your Email" id="Email" />
+  <textarea id="userarea" rows="4" cols="50" placeholder="Your Message" id="message"></textarea>
+  <input type="submit" value="submit" class="user"/>
+  </form>
+</div>
+<div class="navbar">
+<div class="page-header">
+<div class="logo">
+<!--<img src="logos.gif">-->
+</div>
+<ul class="u">
+ <li class="active"><a href="index.html">HOME</a></li>
+ <li><a href="Student_Login.html">STUDENT LOGIN</a></li>
+ <li><a href="Faculty_Login.html">FACULTY LOGIN</a></li>
+ <li><a href="Student_Registration.html">STUDENT REGISTRATION</a></li>
+ <li><a href="Faculty_Registration.html">FACULTY REGISTRATION</a></li> 
+</ul>
+</div>
+</div>
+</div>
+
+<div class="title">
+   <div class="logos"></div><div class="logos"><h1><pre>      <u><font color="black" font-family: "Times New Roman", Times, serif>Test You</font></u></pre></h1></div>
+  <font size="4"><p><font color="orange" face="arial">"Marks</font> in exams <font color="red">doesn't</font> always equal intelligence or brilliance"</p></font></div>
+<div class="button">
+<a href="Student_Login.html" class="btn">LOGIN</a>
+<a href="Student_Registration.html" class="btn">REGISTRATION</a>
+
+</div>
+</div>
+</div>
+</div>
+</header>
+</div>
+
+<div class="footer">
+<div class="footer-content">
+<div class="footer-section about">
+<h2 class="logo-text"><span>About us</span></h2>
+  <h2><span>Headquaters INDIA</span></h2>
+    <h2><span>Telangana</span></h2>
+	 <p>Vardhaman college of Engineering ,kacharam,shamshabad,Hyderabad</p>
+      <div class="contact">
+		<span><img src="IMG/PhoneLogo.jpg" width="20"/> :+918919043807</span><br>
+		<span><img src="IMG/EmailLogo.png" width="20"/> :info@testyou.in</span>
+    	</div>
+    <h2>Follow us</h2>
+     	<div class="socials">
+     <span style="margin-right:15px;">
+     <img src="IMG/FacebookLogo.png" width="35"></span>
+      <span style="margin-right:15px;">
+     <img src="IMG/GPlusLogo.png" width="35"></span>
+     <span style="margin-right:15px;">
+     <img src="IMG/LinkedInLogo.png" width="35"></span>
+    	</div>
+     </div>
+	<div class="footer-section links">
+    <h2><span>About Test You</span></h2><br>
+    <ul class="l"><a href="#"><li>privacy policy</li></a>
+         <a href="#"><li>Terms of use</li></a>
+	 <a href="#"><li>Contact us</li></a>
+	 <a href="#"><li>Features</li></a>
+	 <a href="#"><li>FAQ</li></a>
+         <a href="#"><li>Blog</li></a>
+     </ul>
+    </div>
+ </div>
+ <div class="footer-bottom">
+ &copy; copy rights| Terms of use | privacy policy
+</div>
+ </div>
+ 
+
+</body>
+</html>

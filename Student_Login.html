@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Login</title>
+<link rel="stylesheet" type="text/css" href="CSS/login.css">
+</head>
+<body>
+
+    <center>
+  <a href="index.html"><h2 class="underlineHover">Home</h2></a>
+  <a class="active" href="#"><h2 class="active">Student Login</h2></a>
+  <a href="Faculty_Login.html"><h2 class="underlineHover">Faculty Login</h2></a>
+  <a href="Student_Registration.html" ><h2 class="underlineHover">Student Registration</h2></a>
+  <a href="Faculty_Registration.html"><h2 class="underlineHover">Faculty Registration</h2></a>
+  </center>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a class="active" href="#"><h2 class="active">Student Login</h2></a>
+    <a href="Faculty_Login.html"><h2 class="underlineHover">Faculty Login</h2></a>
+
+    <!-- User Icon -->
+    <div class="fadeIn first">
+      <!--<img src="logos.gif" id="icon" alt="User Icon" > -->
+    </div>
+
+    <!-- Login Form -->
+    <form action="StudentLogin" method="post">
+      <input type="text" id="Username" class="fadeIn second" name="Username" placeholder="Username" autofocus required>
+      <input type="password" id="Password" class="fadeIn third" name="Password" placeholder="Password" required>
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
